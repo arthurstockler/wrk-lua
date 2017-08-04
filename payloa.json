@@ -1,0 +1,83 @@
+{
+  "reference": "Pedido# WRK",
+  "number": "n wrk",
+  "notes": "Teste 999",
+  "status": "DRAFT",
+  "logic_number": "78272704-4",
+  "ref": "aaaa",
+  "items": [
+    {
+      "reference": "Propina",
+      "unit_price": 1,
+      "quantity": 1,
+      "unitOfMeasure": "KG",
+      "name": "Coca",
+      "description": "Coca",
+      "details": "Coca",
+      "sku": "133"
+    }
+  ]
+}
+
+{
+    "reference": "Pedido #1",
+    "number": "001",
+    "notes": "Teste 999",
+    "status": "DRAFT",
+    "price": 3690,
+    "ref": "cd70d14b-f1c3-4d90-99d7-c34883f3a89a",
+    "items": [
+        {
+            "Ref": "0b951034-9bb8-44dc-bf7e-d362674c61f2",
+            "name": "cremr",
+            "description": "cremr",
+            "unit_price": 3690,
+            "quantity": 1,
+            "unit_of_measure": "EACH",
+            "details": "detaul cremm",
+            "sku": "AJKA",
+            "sku_type": "EAN"
+        }
+    ],
+    "transactions": [
+        {
+            "external_id": "87969.85580664974",
+            "transaction_type": "PAYMENT",
+            "description": "DEBITO/A VISTA",
+            "status": "CONFIRMED",
+            "terminal_number": "690000500",
+            "authorization_code": "174827",
+            "number": "135777",
+            "amount": 50,
+            "card": {
+                "mask": "455182-9478"
+            }
+        },
+        {
+            "external_id": "4763.527879176283",
+            "transaction_type": "PAYMENT",
+            "description": "CREDITO/A VISTA",
+            "status": "CONFIRMED",
+            "terminal_number": "690000500",
+            "authorization_code": "174750",
+            "number": "135776",
+            "amount": 3290,
+            "card": {
+                "mask": "455182-9478"
+            }
+        },
+        {
+            "external_id": "71235.76242485589",
+            "transaction_type": "PAYMENT",
+            "description": "CREDITO/A VISTA",
+            "status": "CONFIRMED",
+            "terminal_number": "690000500",
+            "authorization_code": "174020",
+            "number": "135774",
+            "amount": 450,
+            "card": {
+                "mask": "455182-9478"
+            }
+        }
+    ]
+}
