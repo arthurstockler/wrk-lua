@@ -1,12 +1,13 @@
 require('random-payload')
 
+local merchant = require("merchant")()
 local catoi = 1
 local json = require "JSON"
-local i = M.new(5)
 
-function newOrder()
+----------------------------------------------------------------------------
+-- create new order
+function new_order()
   catoi = catoi + 1
-
   local logic_number = logicNumber()
   local body = {
       ["reference"] = 'Pedido ' .. catoi,
@@ -45,7 +46,16 @@ function newOrder()
   }
   wrk.body = json:encode (body)
   wrk.headers["Content-Type"] = "application/json"
-  wrk.headers["merchant_id"] = "0012a2ed-c500-4b8f-83e7-c7da351d839c"
+  wrk.headers["merchant_id"] = merchant.sorted_dbm()
   wrk.headers["logic_number"] = logic_number
   return wrk.format("POST", "/api/v3/orders")
+end
+
+
+function list_order()
+  wrk.body = json:encode (body)
+  wrk.headers["Content-Type"] = "application/json"
+  wrk.headers["merchant_id"] = merchant.sorted_dbm()
+  wrk.headers["logic_number"] = logic_number
+  return wrk.format("GET", "/api/v3/orders")
 end
