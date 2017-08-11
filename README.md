@@ -1,15 +1,16 @@
 Exemplo de script LUA + WRK
 
 Requisitos
-. wrk [https://github.com/wg/wrk]
-. luarocks [https://luarocks.org/]
+
+- wrk [https://github.com/wg/wrk]
+- luarocks [https://luarocks.org/]
 
 Instação Ubuntu
-. sudo apt-get install -y luarocks
+- sudo apt-get install -y luarocks
 
 Instalação de dependências
-. sudo luarocks install json-lua
-. sudo luarocks install uuid
+- sudo luarocks install json-lua
+- sudo luarocks install uuid
 
 
 Exemplo:
