@@ -53,6 +53,7 @@ end
 
 
 function list_order()
+  local logic_number = logicNumber()
   wrk.body = json:encode (body)
   wrk.headers["Content-Type"] = "application/json"
   wrk.headers["merchant_id"] = merchant.sorted_dbm()
